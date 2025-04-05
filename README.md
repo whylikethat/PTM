@@ -6,7 +6,7 @@ This application is a task management system built using C# and integrates with 
 ## Features:
 - View, add, edit, and delete tasks.
 - Integrates with Google Sheets to store task information.
-- Sends email notifications when a task is deleted.
+- Sends email notifications when a task is completed.
 
 ## Dependencies:
 
@@ -18,13 +18,10 @@ The following dependencies are required to run the application:
 
 ## Setup Instructions:
 
-### 1. Clone the Repository:
+### 1. Download the ZIP file:
 
-To clone this repository to your local machine, run the following command:
-
-```bash
-git clone https://github.com/yourusername/yourrepository.git
-```
+Download the Personal Task Manager.zip file from the repository.
+Unzip the file to the location of your choice (Example: C:\dev
 
 ### 2. Configure Google Sheets Credentials:
 
@@ -41,7 +38,7 @@ To access and interact with Google Sheets, you need to create a project in Googl
 In your code, replace the path to your credentials file in the following line:
 
 ```csharp
-private static string CredentialPath = "Credentials/personal-task-manager-455322-b0b9d85b4021.json"; // Adjust the path
+private static string CredentialPath = "YOUR_CREDENTIALS.json"; // Adjust the path
 ```
 
 #### Modify Google Sheet ID and Sheet Name:
@@ -50,7 +47,7 @@ In the `viewTask` form, and anywhere else you need to access the sheet, change t
 
 ```csharp
 private static string SpreadsheetId = "YOUR_GOOGLE_SHEET_ID"; // Replace with your Google Sheet ID
-private static string SheetName = "Tasks"; // Replace with the actual sheet name
+private static string SheetName = "YOUR_SHEET_NAME"; // Replace with the actual sheet name
 ```
 
 You can find the **Spreadsheet ID** in the Google Sheets URL: 
@@ -78,6 +75,8 @@ Make sure you replace the following placeholders:
 
 Once the Google Sheets API and SMTP information have been configured, you can build and run the application.
 
+#### Do not publish the project, simply run the Personal Task Manager.exe file in the Personal Task Manager\bin\Release folder. You can even make a desktop shortcut if you'd like.
+
 #### Steps:
 1. Open the project in Visual Studio.
 2. Press **Ctrl + Shift + B** to build the project.
@@ -102,10 +101,10 @@ To edit a task:
 - A form will appear with the current task data, where you can make modifications.
 - Once changes are made, the task data is updated in both the grid and the Google Sheet.
 
-### 4. Delete Task:
+### 4. Complete Task:
 
 To delete a task:
-- Click the "Delete" button on the respective row.
+- Click the "Complete" button on the respective row.
 - A confirmation message will appear.
 - If confirmed, the task will be removed from both the grid and the Google Sheet.
 - An email notification will be sent to the task’s contact email with a subject of "Task Name" and the body containing the description of the task.
