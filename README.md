@@ -21,6 +21,8 @@ The following dependencies are required to run the application:
 ### 1. Download the ZIP file:
 
 Download the Personal Task Manager.zip file from the repository.
+![image](https://github.com/user-attachments/assets/b251a0a9-d704-4ad4-a04c-4c70bd2eceab)
+
 Unzip the file to the location of your choice (Example: C:\dev
 
 ### 2. Configure Google Sheets Credentials:
