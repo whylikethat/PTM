@@ -23,21 +23,3 @@ To clone this repository to your local machine, run the following command:
 
 ```bash
 git clone https://github.com/yourusername/yourrepository.git
-
-### 2. Configure Google Sheets Credentials:
-To access and interact with Google Sheets, you need to create a project in Google Cloud, enable the Sheets API, and set up a service account.
-
-Steps:
-Go to the Google Cloud Console.
-
-Create a new project (or select an existing one).
-
-Enable the Google Sheets API.
-
-Create Service Account Credentials for the application (a JSON file).
-
-Download the JSON file containing your credentials.
-
-Place this file in the Credentials folder in the project directory.
-
-In your code, replace the path to your credentials file in the following line:
