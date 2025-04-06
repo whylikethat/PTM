@@ -90,17 +90,23 @@ Once the Google Sheets API and SMTP information have been configured, you can bu
 
 To add a task:
 - Enter the task's name, priority, description, and contact email.
+![image](https://github.com/user-attachments/assets/9053d74e-499c-418a-9f2c-3fa6a7986373)
+
 - Press the "Add" button, which will create a new task in the Google Sheet and the application’s grid.
 
 ### 2. View Task:
 
 The "View Task" form will show all tasks in the Google Sheet in a table. It displays the task name, priority, description, and contact email. Each row also includes "Edit" and "Delete" buttons.
+![image](https://github.com/user-attachments/assets/0e6f2ec2-9be5-4398-8b9b-2c28ad7b1fbd)
+
 
 ### 3. Edit Task:
 
 To edit a task:
 - Click the "Edit" button on the respective row.
 - A form will appear with the current task data, where you can make modifications.
+![image](https://github.com/user-attachments/assets/09204811-0ca2-454d-8556-1fa547723bc7)
+
 - Once changes are made, the task data is updated in both the grid and the Google Sheet.
 
 ### 4. Complete Task:
